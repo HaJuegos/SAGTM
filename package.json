@@ -1,0 +1,21 @@
+{
+  "name": "SAGTM",
+  "description": "SAGTM (Sistema Automatizado de Gestión de Turnos Médicos) es una aplicación web desarrollada en Laravel (PHP) diseñada para optimizar, simplificar y automatizar la asignación y administración de turnos médicos, mejorando la eficiencia en los procesos de atención y gestión de personal.",
+  "version": "v0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ha Juegos",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.24.0",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@11.24.0",
+  "type": "module"
+}
