@@ -10,7 +10,7 @@ import editarEmpleadoDash from "../../views/empleados/editar-modal.html?raw";
 
 /**
  * Datos de la tabla a guardar. Por defecto tendra algunos valores guardados de ejemplo.
- * @type {{id: number; nombre: string;}}
+ * @type {{id: number; nombre: string; cargo: string; area: string;}}
  */
 let empleadosData = [
     { id: 1, nombre: "Jose Luis", cargo: "Administrador", area: "Ingeniero" },
@@ -174,7 +174,7 @@ function crearEmpleado() {
 }
 
 /**
- * Funcion principal encargada de la edicion de cargos en la pagina de cargos.
+ * Funcion principal encargada de la edicion de empleados en la pagina de empleados.
  * @returns {void}
  * @author HaJuegos - 17-10-2026
  */
@@ -315,7 +315,7 @@ function editarEmpleado() {
 }
 
 /**
- * Funcion principal que carga la pagina de Cargos con una plantilla fija ya creada.
+ * Funcion principal que carga la pagina de Empleados con una plantilla fija ya creada.
  * @returns {Function}
  * @author HaJuegos - 17-10-2026
  */
