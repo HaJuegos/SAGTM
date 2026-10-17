@@ -1,6 +1,7 @@
 import { renderPageWithNavbar } from "../js/dashboard/dashboard";
 import { renderCargos } from "../js/cargos/cargos";
 import { renderLogin } from "../js/login/login";
+import { renderEmpleados } from "../js/empleados/empleados";
 
 /**
  * Lista de rutas disponibles en la aplicacion.
@@ -10,7 +11,7 @@ import { renderLogin } from "../js/login/login";
 const routes = {
     "#/": renderLogin,
     "#/dashboard": renderPageWithNavbar,
-    "#/empleados": renderCargos,
+    "#/empleados": renderEmpleados,
     "#/cargos": renderCargos,
     "#/usuarios": renderLogin,
 };

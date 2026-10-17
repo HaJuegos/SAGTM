@@ -3,7 +3,7 @@
 
 @import "./login/login.css";
 @import "./dashboard/main.css";
-@import "./cargos//main.css";
+@import "./cargos/main.css";
 
 :root {
     --bg-gradient-start: #667eea;
@@ -548,4 +548,52 @@ body.modal-open {
 
 .bloque-deshabilitado:not([data-motivo]):hover::after {
     content: "No disponible";
+}
+
+.modal-content {
+    background-color: var(--card-bg);
+    border: none;
+    border-radius: var(--card-radius);
+    box-shadow: 0 10px 40px var(--card-shadow);
+}
+
+.modal-header {
+    background: linear-gradient(135deg, var(--btn-primary), var(--btn-hover));
+    color: white;
+    border-bottom: none;
+    border-radius: var(--card-radius) var(--card-radius) 0 0;
+    padding: 1.25rem;
+}
+
+.modal-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.modal-header .btn-close {
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+}
+
+.modal-header .btn-close:hover {
+    opacity: 1;
+}
+
+.modal-body {
+    padding: 1.5rem;
+    color: var(--text-primary);
+}
+
+.modal-footer {
+    border-top: 1px solid var(--input-border);
+    padding: 1rem 1.5rem;
+}
+
+.customsize-modal {
+    max-width: 80% !important;
+    width: 80% !important;
+}
+
+[data-bs-theme="dark"] .modal-content {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
