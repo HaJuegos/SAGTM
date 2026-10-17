@@ -1,0 +1,45 @@
+<div class="header-section fade-in-up text-center">
+    <h1 class="page-title">Gestión de Cargos</h1>
+    <p class="page-subtitle">Administración y control de los cargos disponibles</p>
+</div>
+
+<div class="filter-container fade-in-card" style="animation-delay: 0.2s;">
+    <div class="filter-card">
+        <h5 class="filter-title">
+            <i class="bi bi-funnel me-2"></i>Filtros de Búsqueda
+        </h5>
+
+        <div class="row g-3 align-items-end">
+            <div class="col-12 col-md-6 col-lg">
+                <label class="form-label">Cargos</label>
+
+                <select class="form-select filter-select filtro-tabla" id="filtro-cargo">
+                    <option value="" selected>Todos</option>
+                </select>
+            </div>
+
+            <div class="col-12 col-md-auto">
+                <button class="btn-neo-square w-100" id="btn-crear-cargo" data-bs-toggle="modal"
+                    data-bs-target="#modal-crear-cargo" title="Crear nuevo cargo">
+                    <i class="bi bi-person-plus-fill me-2"></i> Crear nuevo cargo
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="table-card-container fade-in-card" style="animation-delay: 0.4s;">
+    <div class="card-body p-1">
+        <table class="table-hover w-100 table" id="tabla-cargo" style="width:100%">
+            <thead>
+                <tr>
+                    <th><i class="bi bi-hash me-2"></i></th>
+                    <th><i class="bi bi-person-vcard-fill me-2"></i>Nombre</th>
+                    <th><i class="bi bi-gear-fill me-2"></i>Acciones</th>
+                </tr>
+            </thead>
+
+            <tbody></tbody>
+        </table>
+    </div>
+</div>

@@ -1,4 +1,5 @@
-import { renderDashboard } from "../js/dashboard/dashboard";
+import { renderPageWithNavbar } from "../js/dashboard/dashboard";
+import { renderCargos } from "../js/cargos/cargos";
 import { renderLogin } from "../js/login/login";
 
 /**
@@ -8,9 +9,9 @@ import { renderLogin } from "../js/login/login";
  */
 const routes = {
     "#/": renderLogin,
-    "#/dashboard": renderDashboard,
-    "#/empleados": renderLogin,
-    "#/cargos": renderLogin,
+    "#/dashboard": renderPageWithNavbar,
+    "#/empleados": renderCargos,
+    "#/cargos": renderCargos,
     "#/usuarios": renderLogin,
 };
 
