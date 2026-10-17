@@ -1,0 +1,150 @@
+.dt-container .dt-search input,
+.dt-container .dt-length select {
+    background-color: var(--input-bg) !important;
+    border: 1px solid var(--input-border) !important;
+    color: var(--text-primary) !important;
+    border-radius: 0.5rem !important;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: none;
+    margin-left: 0.5rem;
+}
+
+.dt-container .dt-search input:focus,
+.dt-container .dt-length select:focus {
+    border-color: var(--input-focus) !important;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25) !important;
+}
+
+.dt-container .dt-search label,
+.dt-container .dt-length label,
+.dt-container .dt-info {
+    color: var(--text-secondary) !important;
+    font-weight: 500;
+}
+
+table.dataTable {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin-bottom: 1.5rem !important;
+}
+
+table.dataTable th,
+table.dataTable td {
+    border: 1px solid var(--input-border);
+    padding: 1rem 1.2rem;
+    vertical-align: middle;
+    font-size: 1rem;
+}
+
+table.dataTable thead th {
+    background-color: var(--input-bg);
+    color: var(--text-primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid var(--btn-primary);
+    position: relative;
+}
+
+table.dataTable thead th .dt-column-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+table.dataTable thead th .dt-column-order {
+    position: absolute !important;
+    right: 10px !important;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+table.dataTable tbody td {
+    background-color: transparent;
+    color: var(--text-primary);
+}
+
+table.dataTable tbody tr:hover td {
+    background-color: rgba(102, 126, 234, 0.1) !important;
+    cursor: default;
+}
+
+.dt-container .dt-paging {
+    margin-bottom: 0.35rem !important;
+    margin-left: 1rem !important;
+}
+
+.dt-container .dt-paging .pagination {
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.dt-container .dt-paging .page-item .page-link {
+    background-color: transparent !important;
+    border: none !important;
+    color: var(--text-primary) !important;
+    border-radius: 0.5rem !important;
+    padding: 0.5rem 0.75rem;
+    font-weight: 600;
+    margin: 0 !important;
+    box-shadow: none !important;
+    transition: all 0.2s ease;
+}
+
+.dt-container
+    .dt-paging
+    .page-item:not(.active):not(.disabled)
+    .page-link:hover {
+    background-color: rgba(102, 126, 234, 0.1) !important;
+    color: var(--btn-primary) !important;
+    transform: translateY(-1px);
+}
+
+.dt-container .dt-paging .page-item.active .page-link {
+    background-color: var(--btn-primary) !important;
+    color: #fff !important;
+    box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3) !important;
+    font-weight: 700;
+}
+
+.dt-container .dt-paging .page-item.disabled .page-link {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.dt-container .dt-paging .page-link:focus {
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25) !important;
+}
+
+.dt-container .dt-paging .page-link span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 1.1rem;
+}
+
+[data-bs-theme="dark"] table.dataTable th,
+[data-bs-theme="dark"] table.dataTable td {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-bs-theme="dark"] table.dataTable thead th {
+    background-color: #2b3035 !important;
+    color: #e2e8f0 !important;
+    border-bottom-color: var(--btn-primary) !important;
+}
+
+[data-bs-theme="dark"] table.dataTable tbody td {
+    background-color: transparent !important;
+    color: var(--text-primary) !important;
+}
+
+[data-bs-theme="dark"] table.dataTable tbody tr:hover td {
+    background-color: rgba(102, 126, 234, 0.2) !important;
+}

@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg dashboard-navbar px-1">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="/dashboard">
+            <div class="brand-icon">
+                <i class="bi bi-calendar-check"></i>
+            </div>
+
+            <span class="brand-text">Sistema de Turnos</span>
+        </a>
+
+        <div class="d-flex align-items-center gap-3">
+            <button class="btn theme-toggle-btn" id="btn-theme-toggle" data-bs-toggle="tooltip"
+                data-bs-placement="bottom" data-bs-title="Cambiar tema" type="button" aria-label="Cambiar tema">
+                <i class="bi bi-sun-fill theme-icon-light"></i>
+                <i class="bi bi-moon-stars-fill theme-icon-dark"></i>
+            </button>
+
+            <div class="dropdown">
+                <button class="btn user-dropdown-btn d-flex align-items-center gap-2" data-bs-toggle="dropdown"
+                    type="button" aria-expanded="false">
+                    <div class="user-avatar">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+
+                    <span class="user-name d-none d-md-block">
+                        Invitado
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid mt-4" id="dashboard-contenido"></div>
