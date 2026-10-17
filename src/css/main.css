@@ -1,5 +1,7 @@
 @import "./boostrap.css";
+
 @import "./login/login.css";
+@import "./dashboard/main.css";
 
 :root {
     --bg-gradient-start: #667eea;

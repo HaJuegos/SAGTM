@@ -1,3 +1,4 @@
+import { renderDashboard } from "../js/dashboard/dashboard";
 import { renderLogin } from "../js/login/login";
 
 /**
@@ -7,6 +8,10 @@ import { renderLogin } from "../js/login/login";
  */
 const routes = {
     "#/": renderLogin,
+    "#/dashboard": renderDashboard,
+    "#/empleados": renderLogin,
+    "#/cargos": renderLogin,
+    "#/usuarios": renderLogin,
 };
 
 /**
