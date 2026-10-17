@@ -1,0 +1,40 @@
+<div class="modal fade" id="modal-editar-cargo" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title ps-1">
+                    <i class="bi bi-pencil-fill me-2"></i>Editar Cargo
+                </h5>
+
+                <button class="btn-close" data-bs-dismiss="modal" type="button" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body p-4">
+                <form class="row g-3" id="form-editar-cargo">
+                    <input id="input-cargo-id-editar" type="text" hidden required>
+
+                    <div class="col-12 pb-2">
+                        <h6 class="text-primary fw-bold mb-0">Datos del Cargo</h6>
+                    </div>
+
+                    <div class="col-md">
+                        <label class="form-label small text-uppercase fw-bold text-secondary">Nombre de Cargo</label>
+
+                        <input class="form-control filter-input" id="editar-input-cargo" type="text"
+                            placeholder="Escriba el nombre del cargo..." required>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary-custom" data-bs-dismiss="modal" type="button">
+                    <i class="bi bi-x-circle me-1"></i>Cancelar
+                </button>
+
+                <button class="btn btn-primary-custom" id="btn-editar-cargo" type="button">
+                    <i class="bi bi-check-circle me-1"></i>Guardar Cambios
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
