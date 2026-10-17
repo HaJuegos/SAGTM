@@ -10,11 +10,11 @@ import { renderUsuarios } from "../js/usuarios/usuarios";
  * @author HaJuegos - 16-10-2026
  */
 const routes = {
-    "#/": renderLogin,
-    "#/dashboard": renderPageWithNavbar,
-    "#/empleados": renderEmpleados,
-    "#/cargos": renderCargos,
-    "#/usuarios": renderUsuarios,
+    "/": renderLogin,
+    "/dashboard": renderPageWithNavbar,
+    "/empleados": renderEmpleados,
+    "/cargos": renderCargos,
+    "/usuarios": renderUsuarios,
 };
 
 /**
@@ -31,13 +31,8 @@ export function startRoutes() {
      * @author HaJuegos - 16-10-2026
      */
     const manageRoutes = () => {
-        const path = window.location.hash || "#/";
-        const renderPage =
-            routes[path] ||
-            (() => {
-                page: "";
-                events: [];
-            });
+        const path = window.location.pathname || "/";
+        const renderPage = routes[path] || routes["/"];
 
         const viewData = renderPage();
 

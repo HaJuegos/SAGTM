@@ -15,7 +15,7 @@ function formLoginEvents() {
             const userTest = document.getElementById("usuario-input");
             const passTest = document.getElementById("contrasena-input");
 
-            window.location.hash = "#/dashboard";
+            window.location.pathname = "/dashboard";
         });
     }
 }
